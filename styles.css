@@ -8,7 +8,7 @@
 }
 
 body {
-  background-color: rgb(36, 36, 36);
+  background-color: rgb(29, 29, 29);
 }
 
 .wallpaper {
@@ -109,14 +109,14 @@ i:hover {
 
 .container-lang img {
   padding: 3px !important;
-  height: 90px;
-  width: 90px;
+  height: 75px;
+  width: 75px;
   object-fit: contain;
   transition: all ease-in-out .1s;
 }
 
 .container-lang img:hover {
-  transform: scale(1.4);
+  transform: scale(1.5);
 }
 
 @media (max-width: 1180px) {
