@@ -138,6 +138,7 @@ i:hover {
   animation: escribiendo 2s steps(20);          
   overflow: hidden;
   color: white;
+  margin-bottom: 0 !important;
 }
 
 .cursor{
@@ -198,6 +199,10 @@ i:hover {
   .container-dev {
     padding: 0px !important;
   }
+
+  .maquina-escribir {
+    display: none;
+  }
 }
 
 @media (max-width: 851px) {
@@ -234,7 +239,7 @@ i:hover {
   }
 
   .developer {
-    height: 200px !important;
+    height: 180px !important;
   }
 
   .container-link {
@@ -260,5 +265,11 @@ i:hover {
 
   .container-maquina {
     padding: 0 !important;
+  }
+}
+
+@media (max-width: 380px) {
+  .container-lang {
+    max-width: 300px;
   }
 }
