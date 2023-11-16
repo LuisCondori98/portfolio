@@ -76,6 +76,7 @@ body {
 
 .container-dev:hover {
   box-shadow: rgba(250, 150, 0, 0.458) 0px 14px 28px, rgba(250, 150, 0, 0.458) 0px 10px 10px;
+  /* animation: luces 10s infinite linear; */
 }
 
 .desc {
@@ -117,12 +118,59 @@ i:hover {
 
 .container-lang img:hover {
   transform: scale(1.5);
+  box-shadow: none !important;
+}
+
+.container-mouse {
+  /* position: absolute; */
+  right: 120px;
+  bottom: 120px;
+  padding: 40px 70px !important;
+  transition: all ease-in-out .3s;
+  border: rgb(128, 128, 128) 3px solid;
+  animation: luces 10s infinite;
+  border-radius: 15px;
+}
+
+@keyframes luces {
+  0% {
+    box-shadow: rgba(8, 250, 0, 0.458) 0px 14px 28px, rgba(8, 250, 0, 0.458) 0px 10px 10px;
+  }
+  15% {
+    box-shadow: rgba(250, 0, 250, 0.458) 0px 14px 28px, rgba(250, 0, 225, 0.458) 0px 10px 10px;
+  }
+  30% {
+    box-shadow: rgba(250, 0, 0, 0.458) 0px 14px 28px, rgba(250, 0, 0, 0.458) 0px 10px 10px;
+  }
+  45% {
+    box-shadow: rgba(208, 250, 0, 0.458) 0px 14px 28px, rgba(233, 250, 0, 0.458) 0px 10px 10px;
+  }
+  60% {
+    box-shadow: rgba(8, 0, 250, 0.458) 0px 14px 28px, rgba(8, 0, 250, 0.458) 0px 10px 10px;
+  }
+  75% {
+    box-shadow: rgba(255, 255, 255, 0.458) 0px 14px 28px, rgba(255, 255, 255, 0.458) 0px 10px 10px;
+  }
+  90% {
+    box-shadow: rgba(0, 237, 250, 0.458) 0px 14px 28px, rgba(0, 237, 250, 0.458) 0px 10px 10px;
+  }
+  90% {
+    box-shadow: rgba(250, 150, 0, 0.458) 0px 14px 28px, rgba(250, 150, 0, 0.458) 0px 10px 10px;
+  }
+}
+
+.container-mouse img{
+  height: 120px;
 }
 
 @media (max-width: 1180px) {
   .container-description {
     flex-direction: column;
     align-items: center;
+  }
+
+  .container-mouse {
+    display: none;
   }
 }
 
