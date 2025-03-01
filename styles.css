@@ -29,7 +29,6 @@ body {
 }
 
 .container-dev {
-  text-align: center;
   border-radius: 15px;
   padding: 35px !important;
   transition: all ease-in-out .5s;
