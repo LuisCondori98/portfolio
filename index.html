@@ -19,6 +19,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
     />
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./styles.css" />
 
     <title>Luis Condori | Desarrollador Backend</title>
@@ -91,13 +92,13 @@
             </div>
           </div>
 
-          <div class="hero-visual" aria-hidden="true">
+          <div class="hero-visual" aria-hidden="true" data-aos="fade-left">
             <div class="developer-glow"></div>
             <img class="developer" src="./img/dev.png" alt="" />
           </div>
         </div>
 
-        <div class="technologies-wrapper" id="tecnologias">
+        <div class="technologies-wrapper" id="tecnologias" data-aos="fade-up">
           <div class="technologies-heading">
             <span>Tecnologías</span>
             <small>Herramientas con las que he trabajado</small>
@@ -106,32 +107,39 @@
           <div class="technologies-content">
             <div class="container-lang" aria-label="Tecnologías utilizadas">
               <img
-                src="./img/html.png"
-                alt="HTML"
+                src="./img/mysql.jpg"
+                alt="MySQL"
                 data-bs-toggle="tooltip"
                 data-bs-placement="top"
-                title="HTML"
+                title="MySQL"
               />
               <img
-                src="./img/css.png"
-                alt="CSS"
+                src="./img/sql.png"
+                alt="Sql Server"
                 data-bs-toggle="tooltip"
                 data-bs-placement="top"
-                title="CSS"
+                title="Sql Server"
               />
               <img
-                src="./img/sass.png"
-                alt="Sass"
+                src="./img/postgresql.png"
+                alt="Postgre Sql"
                 data-bs-toggle="tooltip"
                 data-bs-placement="top"
-                title="Sass"
+                title="Postgre Sql"
               />
               <img
-                src="./img/bootstrap.png"
-                alt="Bootstrap"
+                src="./img/mongo.png"
+                alt="MongoDB"
                 data-bs-toggle="tooltip"
                 data-bs-placement="top"
-                title="Bootstrap"
+                title="MongoDB"
+              />
+              <img
+                src="./img/firebase.png"
+                alt="Firebase"
+                data-bs-toggle="tooltip"
+                data-bs-placement="top"
+                title="Firebase"
               />
               <img
                 src="./img/react.png"
@@ -139,6 +147,13 @@
                 data-bs-toggle="tooltip"
                 data-bs-placement="top"
                 title="React"
+              />
+              <img
+                src="./img/next.jpg"
+                alt="Next.js"
+                data-bs-toggle="tooltip"
+                data-bs-placement="top"
+                title="Next.js"
               />
               <img
                 src="./img/angular.png"
@@ -183,11 +198,11 @@
                 title="C Sharp"
               />
               <img
-                src="./img/mongo.png"
-                alt="MongoDB"
+                src="./img/dotnet.png"
+                alt=".NET"
                 data-bs-toggle="tooltip"
                 data-bs-placement="top"
-                title="MongoDB"
+                title=".NET"
               />
               <img
                 src="./img/node.png"
@@ -204,6 +219,13 @@
                 title="Express"
               />
               <img
+                src="./img/nest.jpg"
+                alt="NestJS"
+                data-bs-toggle="tooltip"
+                data-bs-placement="top"
+                title="NestJS"
+              />
+              <img
                 src="./img/django.png"
                 alt="Django"
                 data-bs-toggle="tooltip"
@@ -217,10 +239,27 @@
                 data-bs-placement="top"
                 title="Spring Boot"
               />
-            </div>
-
-            <div class="container-mouse" aria-hidden="true">
-              <img src="./img/mouse.png" alt="" />
+              <img
+                src="./img/springcloud.png"
+                alt="Spring Cloud"
+                data-bs-toggle="tooltip"
+                data-bs-placement="top"
+                title="Spring Cloud"
+              />
+              <img
+                src="./img/aws.png"
+                alt="AWS"
+                data-bs-toggle="tooltip"
+                data-bs-placement="top"
+                title="AWS"
+              />
+              <img
+                src="./img/docker.png"
+                alt="Docker"
+                data-bs-toggle="tooltip"
+                data-bs-placement="top"
+                title="Docker"
+              />
             </div>
           </div>
         </div>
@@ -242,7 +281,7 @@
         </div>
 
         <div class="projects-grid">
-          <article class="project-card">
+          <article class="project-card" data-aos="zoom-in">
             <div class="project-top">
               <div class="project-icon" aria-hidden="true">
                 <i class="bi bi-heart-pulse"></i>
@@ -250,7 +289,7 @@
               <span class="project-number">PROYECTO 01</span>
             </div>
 
-            <div class="project-content">
+            <div class="project-content" >
               <h3>Sistema de Fisioterapia</h3>
               <p>
                 Aplicación web para apoyar la gestión de un centro de
@@ -288,7 +327,7 @@
             </div>
           </article>
 
-          <article class="project-card">
+          <article class="project-card" data-aos="zoom-in">
             <div class="project-top">
               <div class="project-icon" aria-hidden="true">
                 <i class="bi bi-hospital"></i>
@@ -338,6 +377,10 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
     <script src="./main.js"></script>
   </body>
 </html>
